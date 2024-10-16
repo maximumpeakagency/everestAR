@@ -4,14 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <title>Maximum Peak AR</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: true;'>
         <a-marker preset="pattern" type="pattern" url="https://maximumpeakagency.github.io/everestAR/Static/pattern-peak.patt">
           <a-entity gltf-model="https://maximumpeakagency.github.io/everestAR/Static/everestModel.glb" scale="1 1 1" rotation="0 0 0"></a-entity>
         </a-marker>
+        <a-sky color="#B9B9D2"></a-sky>
       <a-entity camera></a-entity>
     </a-scene>
 </body>
